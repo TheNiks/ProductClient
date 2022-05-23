@@ -27,6 +27,7 @@
 		9D21CB972837570C00A21026 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21CB962837570C00A21026 /* ProductsViewModel.swift */; };
 		9D26477B2837A3DE00DA180E /* ProductCoreModel in Frameworks */ = {isa = PBXBuildFile; productRef = 9D26477A2837A3DE00DA180E /* ProductCoreModel */; };
 		9D4373D32836067D00A991A2 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4373D22836067D00A991A2 /* ProductDetail.swift */; };
+		9DC4533B283B47FC00454C01 /* ProductCoreModel in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC4533A283B47FC00454C01 /* ProductCoreModel */; };
 		9DDACF3C2837A26200A4DA56 /* ProductCoreModel in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDACF3B2837A26200A4DA56 /* ProductCoreModel */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC4533B283B47FC00454C01 /* ProductCoreModel in Frameworks */,
 				9DDACF3C2837A26200A4DA56 /* ProductCoreModel in Frameworks */,
 				9D26477B2837A3DE00DA180E /* ProductCoreModel in Frameworks */,
 			);
@@ -234,6 +236,7 @@
 			packageProductDependencies = (
 				9DDACF3B2837A26200A4DA56 /* ProductCoreModel */,
 				9D26477A2837A3DE00DA180E /* ProductCoreModel */,
+				9DC4533A283B47FC00454C01 /* ProductCoreModel */,
 			);
 			productName = ProductOnlineClient;
 			productReference = 9D077D112834B0FB00F7A87D /* ProductOnlineClient.app */;
@@ -310,6 +313,7 @@
 			packageReferences = (
 				9DDACF3A2837A26200A4DA56 /* XCRemoteSwiftPackageReference "ProductCoreModel" */,
 				9D2647792837A3DE00DA180E /* XCRemoteSwiftPackageReference "ProductCoreModel" */,
+				9DC45339283B47FC00454C01 /* XCRemoteSwiftPackageReference "ProductCoreModel" */,
 			);
 			productRefGroup = 9D077D122834B0FB00F7A87D /* Products */;
 			projectDirPath = "";
@@ -695,6 +699,14 @@
 				kind = branch;
 			};
 		};
+		9DC45339283B47FC00454C01 /* XCRemoteSwiftPackageReference "ProductCoreModel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TheNiks/ProductCoreModel.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		9DDACF3A2837A26200A4DA56 /* XCRemoteSwiftPackageReference "ProductCoreModel" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TheNiks/ProductCoreModel.git";
@@ -707,6 +719,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		9D26477A2837A3DE00DA180E /* ProductCoreModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DDACF3A2837A26200A4DA56 /* XCRemoteSwiftPackageReference "ProductCoreModel" */;
+			productName = ProductCoreModel;
+		};
+		9DC4533A283B47FC00454C01 /* ProductCoreModel */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9DDACF3A2837A26200A4DA56 /* XCRemoteSwiftPackageReference "ProductCoreModel" */;
 			productName = ProductCoreModel;
