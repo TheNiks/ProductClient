@@ -14,7 +14,6 @@
 		9D077D262834B0FD00F7A87D /* ProductOnlineClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D077D252834B0FD00F7A87D /* ProductOnlineClientTests.swift */; };
 		9D077D302834B0FD00F7A87D /* ProductOnlineClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D077D2F2834B0FD00F7A87D /* ProductOnlineClientUITests.swift */; };
 		9D077D322834B0FD00F7A87D /* ProductOnlineClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D077D312834B0FD00F7A87D /* ProductOnlineClientUITestsLaunchTests.swift */; };
-		9D077D3F2834B20C00F7A87D /* Product1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D077D3E2834B20C00F7A87D /* Product1.swift */; };
 		9D077D432834B2BE00F7A87D /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D077D422834B2BE00F7A87D /* ProductRow.swift */; };
 		9D077D452834F6BD00F7A87D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D077D442834F6BD00F7A87D /* ModelData.swift */; };
 		9D077D482834F72A00F7A87D /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D077D472834F72A00F7A87D /* ProductData.json */; };
@@ -59,7 +58,6 @@
 		9D077D2B2834B0FD00F7A87D /* ProductOnlineClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductOnlineClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D077D2F2834B0FD00F7A87D /* ProductOnlineClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOnlineClientUITests.swift; sourceTree = "<group>"; };
 		9D077D312834B0FD00F7A87D /* ProductOnlineClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOnlineClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9D077D3E2834B20C00F7A87D /* Product1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product1.swift; sourceTree = "<group>"; };
 		9D077D422834B2BE00F7A87D /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		9D077D442834F6BD00F7A87D /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		9D077D472834F72A00F7A87D /* ProductData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				9D077D442834F6BD00F7A87D /* ModelData.swift */,
-				9D077D3E2834B20C00F7A87D /* Product1.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,7 +365,6 @@
 				9D077D452834F6BD00F7A87D /* ModelData.swift in Sources */,
 				9D21CB9228374F1F00A21026 /* ErrorHandling.swift in Sources */,
 				9D077D152834B0FB00F7A87D /* ProductOnlineClientApp.swift in Sources */,
-				9D077D3F2834B20C00F7A87D /* Product1.swift in Sources */,
 				9D21CB8C28374DC300A21026 /* RequestModel.swift in Sources */,
 				9D21CB9028374E1E00A21026 /* ServiceManager.swift in Sources */,
 			);
