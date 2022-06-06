@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import ProductCoreModel
 
+/// Product row component.
 struct ProductRow: View {
     var product: Product
     var body: some View {
@@ -36,6 +37,7 @@ struct ProductRow: View {
     }
 }
 
+/// Product row component preview.
 struct ProductRow_Preview: PreviewProvider {
     static var previews: some View {
         ProductRow(product: productData)

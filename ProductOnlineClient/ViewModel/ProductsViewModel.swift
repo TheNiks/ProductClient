@@ -10,16 +10,24 @@ import Combine
 import SwiftUI
 import ProductCoreModel
 
+/// It's utilise for API call and save response in model object.
 public class ProductsViewModel: ObservableObject {
+    
+    /// It's store api updated response.
     @Published var productsListDataNew: Products? = nil
+    /// Save error when throw from API.
     @Published var error: ErrorManager? = nil
+    /// Define publisher when API calling process complete.
     var productsSubscription = PassthroughSubject<Products, ErrorManager>()
+    /// Store publisher into stack
     public var subscription = Set<AnyCancellable>()
     
+    /// Initialisation method for product view model.
     init() {
         subscriberProduct()
     }
     
+    /// Subscribe products stream.
     private func subscriberProduct() {
         productsSubscription
             .receive(on: DispatchQueue.main)
@@ -36,6 +44,7 @@ public class ProductsViewModel: ObservableObject {
         .store(in: &subscription)
     }
     
+    /// Service API call for products.
     func serviceProducts() {
         Services.fetchProducts { result in
             switch result {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Display all product list.
 struct ProductsList: View {
     @StateObject var productVM = ProductsViewModel()
     var body: some View {

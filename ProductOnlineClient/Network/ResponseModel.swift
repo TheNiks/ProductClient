@@ -7,9 +7,11 @@
 
 import Foundation
 
+/// Define response model what we got from api and add additional parameters.
 struct ResponseModel<T: Codable>: Codable {
     
     // MARK: - Properties
+    /// it's bool flag for success or 
     var isSuccess: Bool
     var message: String
     var error: ErrorManager {

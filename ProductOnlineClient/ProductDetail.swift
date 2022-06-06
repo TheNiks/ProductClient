@@ -8,6 +8,7 @@
 import SwiftUI
 import ProductCoreModel
 
+/// Show product with more details data.
 struct ProductDetail: View {
     var productInfo: Product
     var body: some View {
@@ -71,6 +72,7 @@ struct ProductsDetails_Previews: PreviewProvider {
     }
 }
 
+/// Product image view component for product detail.
 struct ProductImageView: View {
     @State var img: String
     var body: some View {

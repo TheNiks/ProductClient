@@ -7,11 +7,13 @@
 
 import Foundation
 
+/// Service manager class for manage api request.
 class ServiceManager {
     static let shared: ServiceManager = ServiceManager()
     var baseURL: String = "http://127.0.0.1:8080/api"
 }
 
+/// Handle api request in extension.
 extension ServiceManager {
     
     func sendRequest<T: Codable>(request: RequestModel, completion: @escaping(Result<T, ErrorManager>) -> Void) {

@@ -7,11 +7,13 @@
 
 import Foundation
 
+/// Define error type.
 enum ErrorType: String {
     case general = "Error_general"
     case parsing = "Error_parsing"
 }
 
+/// Manager class for error.
 class ErrorManager: Error {
     
     // MARK: - Properties

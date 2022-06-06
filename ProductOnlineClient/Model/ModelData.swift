@@ -8,6 +8,7 @@ Storage for model data.
 import Foundation
 import ProductCoreModel
 
+/// Define product mock data.
 var productsListData: Products = load("ProductData.json")
 var productData: Product =  loadFromString("""
                                             {
@@ -31,6 +32,7 @@ var productData: Product =  loadFromString("""
                                            }
                                        """)
 
+/// Parse data from mock file.
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
@@ -53,7 +55,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-
+/// Parse data from json string.
 func loadFromString<T: Decodable>(_ jsonString: String) -> T {
     var data: Data?
     do {

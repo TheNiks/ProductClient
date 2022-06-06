@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/// Define enumeration for http method.
 enum RequestHTTPMethod: String {
     case get = "GET"
     case post = "POST"
@@ -15,6 +15,7 @@ enum RequestHTTPMethod: String {
     case delete = "DELETE"
 }
 
+/// Define protocol for request.
 protocol RequestModel {
     var path: String { get set }
     var parameters: [String: String]? { get set }
@@ -23,7 +24,11 @@ protocol RequestModel {
     var body: [String: Any]? { get set }
 }
 
+/// Extension of request model for add new functionality.
 extension RequestModel {
+    
+    /// Adding new method for create URL request.
+    /// - Returns: Base on RequestModel parameters return URLRequest.
     func urlRequest() -> URLRequest {
         var endpoint: String = ServiceManager.shared.baseURL.appending(path)
         
